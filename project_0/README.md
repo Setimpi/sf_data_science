@@ -11,7 +11,7 @@
 
 [5. Результат](https://github.com/Setimpi/sf_data_science/tree/main/project_0/README.md#Результат)
 
-[6. Вывод](https://github.com/Setimpi/sf_data_science/tree/main/project_0/README.md#Вывод)
+[6. Вывод](https://github.com/Setimpi/sf_data_science/blob/main/project_0/README.md#Выводы:)
 
 ### Описание проекта
 Угадай заданное компьютером число за минимальное сило попыток.
