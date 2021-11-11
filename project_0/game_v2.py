@@ -27,9 +27,9 @@ def random_predict(number: int = 1) -> int:
         elif predict_number < number:
             min_number = predict_number
     
-        predict_number = round((max_number + min_number)/2)
+        predict_number = np.random.randint(min_number, max_number)
         count += 1
-    
+           
     return count
 
 def score_game(random_predict) -> int:
@@ -42,7 +42,7 @@ def score_game(random_predict) -> int:
         int: среднее количество попыток
     """
     count_ls = [] # список для сохранения количества попыток
-    #np.random.seed(1) # фиксируем сид для вопроизводимости
+    np.random.seed(1) # фиксируем сид для вопроизводимости
     random_array = np.random.randint(1, 101, size=(1000)) # загадали список чисел
 
     for number in random_array:

@@ -19,7 +19,7 @@ while number != predict_number:
     elif predict_number < number:
         min_number = predict_number
     
-    predict_number = round((max_number + min_number)/2)
+    predict_number = np.random.randint(min_number, max_number)
     count += 1
         
 print(f"Вы угадали число! Это число = {number}, за {count} попыток")
