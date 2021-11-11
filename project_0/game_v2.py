@@ -15,21 +15,21 @@ def random_predict(number: int = 1) -> int:
     """
     predict_number = np.random.randint(1, 101) # отгадываем число первый раз
 
+    min_number = 1
+    max_number = 100
     count = 1
-
-
+    
     while number != predict_number:
         
         if predict_number > number:
-            predict_number = np.random.randint(1, predict_number)
-            # обрасывем числа большие загадонного
-            count += 1
-            
+            max_number = predict_number
+
         elif predict_number < number:
-            predict_number = np.random.randint(predict_number + 1, number + 1)
-            # отбрасываем числа меньше загадонного
-            count += 1
-        
+            min_number = predict_number
+    
+        predict_number = round((max_number + min_number)/2)
+        count += 1
+    
     return count
 
 def score_game(random_predict) -> int:
